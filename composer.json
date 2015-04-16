@@ -1,0 +1,21 @@
+{
+    "name": "ZeeCoder/onesky-helper",
+    "description": "A helper library that wraps the OneSky Api SDK (PHP).",
+    "type": "library",
+    "require": {
+        "php": ">=5.4",
+        "onesky/api-library-php5": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ZeeCoder\\": "src/ZeeCoder/"
+        }
+    },
+    "license": "MIT",
+    "homepage": "https://github.com/ZeeCoder/onesky-helper",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
+}
