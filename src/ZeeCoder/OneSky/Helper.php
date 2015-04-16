@@ -14,7 +14,7 @@ class Helper
 
     public function __construct(array $config)
     {
-        $this->config = $this->normalizeConfig($config);
+        $this->config = $config;
 
         $this->client =
             (new Client())
@@ -92,15 +92,5 @@ class Helper
                 'source_file_name' => $filename
             ]
         );
-    }
-
-    /**
-     * Normalizes the config array to prevent possible errors.
-     */
-    private function normalizeConfig(array $config)
-    {
-        $config['local_download_path'] = rtrim($config['local_download_path'], '/');
-
-        return $config;
     }
 }
