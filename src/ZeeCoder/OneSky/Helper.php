@@ -1,6 +1,6 @@
 <?php
 
-namespace App\OneSky;
+namespace ZeeCoder\OneSky;
 
 use Onesky\Api\Client;
 
