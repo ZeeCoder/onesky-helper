@@ -1,5 +1,5 @@
 {
-    "name": "ZeeCoder/onesky-helper",
+    "name": "zeecoder/onesky-helper",
     "description": "A helper library that wraps the OneSky Api SDK (PHP).",
     "type": "library",
     "require": {
