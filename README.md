@@ -1,4 +1,5 @@
-## OneSky Helper
+# OneSky Helper
+[![Project Status](http://stillmaintained.com/ZeeCoder/onesky-helper.png)](http://stillmaintained.com/ZeeCoder/onesky-helper)
 
 This is a simple Helper class, which uses the OneSky SDK internally.
 
