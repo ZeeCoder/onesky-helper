@@ -16,12 +16,23 @@ class Helper
     {
         $this->config = $config;
 
-        $this->client =
-            (new Client())
-            ->setApiKey($config['api_key'])
-            ->setSecret($config['api_secret'])
-        ;
+		if ($config['api_key'] && $config['api_secret']) {
+	        $this->client =
+	            (new Client())
+	            ->setApiKey($config['api_key'])
+	            ->setSecret($config['api_secret'])
+	        ;
+		}
     }
+
+	public static function withConfig($key, $secret, $project)
+	{
+		return new self([
+			'api_key' => $key,
+			'api_secret' => $secret,
+			'project_id' => $project,
+		]);
+	}
 
     /**
      * Gets the 'projects' resource's 'languages' action.

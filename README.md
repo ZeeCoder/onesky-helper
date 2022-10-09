@@ -14,3 +14,20 @@ then can be used in Composer, Symfony or Silex projects.
 ```
 composer require zeecoder/onesky-helper
 ```
+
+## Usage
+```php
+$key     = 123;
+$secret  = 'abc';
+$project = 1;
+
+//legacy instantiation
+$oneSky = new ZeeCoder\OneSky\Helper(['api_key' => $key, 'api_secret' => $secret, 'project_id' => $project]);
+//new instantiation
+$oneSky = ZeeCoder\OneSky\Helper::withConfig($key, $secret, $project);
+
+$files = $oneSky->getProjectTranslationFiles();
+//[...]
+```
+
+Check the `ZeeCoder\OneSky\Helper` class for the currently implemented API calls - the methods are pretty self-explanatory :)
